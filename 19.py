@@ -1,0 +1,6 @@
+p = float(input("enter loan amount:"))
+r = float(input("enter annual interest rate:"))
+n = float(input("enter loan period in months:"))
+R = r/ (12 * 100)
+EMI = p*R*(1*R) ** n/ ((1+ R) ** n-1)
+print("monthly EMI =", EMI)
